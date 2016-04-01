@@ -24,25 +24,30 @@
 <div id="wrapper">
     <header class="section group">
         <div class="col span_1_of_3">
-            <img class="logo" src="assets/img/logo_headerwhite.svg" alt="Logo Image"/>
+            <img class="logo" src="assets/images/logo_headerwhite.svg" alt="Logo Image"/>
         </div>
         <div class="col span_2_of_3">
             <nav class="top-navigation">
                 <div class="content">
                     <ul class="links">
-                        <li class="active"><a href="#">About Me</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact Me</a></li>
+                        <li class="active"><a href="#About">About Me</a></li>
+                        <li><a href="#Portfolio">Portfolio</a></li>
+                        <li><a href="#Contact">Contact Me</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
+    <div class="heading">
+        <section class="introduction">
+            <img src="assets/images/header.jpg">
+        </section>
+    </div>
     <div id="content">
         <div class="section group">
             <div class="col span_3_of_3">
                 <div class="page-introduction">
-                    <h1 class="page-title">About Me</h1>
+                    <h1 class="page-title" id="About">About Me</h1>
                     <section class="introduction-section">
                         <h2>Introduction</h2>
 
@@ -83,44 +88,64 @@
     </div>
     <div class="portfolio">
         <div class="section group">
-            <h1 class="page-title">Portfolio</h1>
+            <h1 class="page-title" id="Portfolio">Portfolio</h1>
 
-            <div class="col span_1_of_3">
-                <img class="thumbnails" src="assets/img/nupsizeta.png">
+
+            <div class="img">
+                <a target="_blank" href="http://www.rflushent.com/portfolio/nupsizeta/
+">
+                    <img src="assets/images/nupsizeta.png" alt="Forest" width="300" height="200">
+                </a>
+                <div class="desc">Nu Psi Zeta</div>
             </div>
-            <div class="col span_1_of_3">
-                <img class="thumbnails" src="assets/img/sflgold.png">
+
+            <div class="img">
+                <a target="_blank" href="http://www.rflushent.com/portfolio/sflgold/">
+                    <img src="assets/images/sflgold.png" alt="Northern Lights" width="300" height="200">
+                </a>
+                <div class="desc">South Florida Gold</div>
             </div>
-            <div class="col span_1_of_3">
-                <img class="thumbnailslast" src="assets/img/Soflaevents.png">
+
+            <div class="img">
+                <a target="_blank" href="https://web.archive.org/web/20150516024220/http://soflaevents.com/
+">
+                    <img src="assets/images/soflaevents.png" alt="Mountains" width="300" height="200">
+                </a>
+                <div class="desc">SOFLAEVENTS</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="contact">
+        <div class="section group">
+            <h1 class="page-title" id="Contact">Contact me</h1>
+
+            <div class="col span_3_of_3">
+                <form>
+                    <fieldset>
+                        <legend> Use this form</legend><br>
+                            <label>First Name:</label> <br>
+                    <input type="text" name="firstname">
+                    <label>Last Name:</label><br>
+                    <input type="text" name="lastname" >
+                    <label>Email:</label><br>
+                    <input type="email" name="email"/>
+                    <label>Message:</label><br><textarea></textarea>
+                        <input type="submit" value="Submit">
+                </fieldset></form></div>
+
             </div>
         </div>
     </div>
-</div>
-<div class="contact">
-    <div class="section group">
-        <h1 class="page-title">Contact me</h1>
-
-        <div class="col span_1_of_3">
-            Place form Here
-        </div>
-        <div class="col span_1_of_3">
-            Another image
-        </div>
-        <div class="col span_1_of_3">
-            another image
-        </div>
-    </div>
-</div>
 </div>
 <footer class="social">
     <div class="col span_3_of_3">
 
         <nav class="bottom_navigation">
             <ul class="links">
-                <li class="active"><a href="#"> About Me</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact Me</a></li>
+                <li class="active"><a href="#About"> About Me</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#Contact">Contact Me</a></li>
             </ul>
         </nav>
         <h5>Follow me on:</h5>

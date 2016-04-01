@@ -1,12 +1,6 @@
 /*FONTS  ============================================================================= */
-
-@font-face {
-    font-family: 'Work Sans', Arial, Helvetica, sans-serif;
-    src: url(https://fonts.googleapis.com/css?family=Archivo+Black|Work+Sans:400,500););
-    font-weight: normal;
-    font-style: normal;
-
-}
+@import url(https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,900,700);
 
 /* BASIC PAGE SETUP ============================================================================= */
 
@@ -14,10 +8,12 @@ body {
     font: 100%/1.4 'Work Sans', Arial, Helvetica, sans-serif;
     color: #000;
     text-align: center;
+    font-weight: 400;
+
 }
 
 html,
-body, {
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -99,9 +95,10 @@ p {
 /*  HEADINGS  ============================================================================= */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    font-family: 'Archivo Narrow', Helvetica, "Arial Black", sans-serif;
     margin: 3px 0;
     padding: 5px;
+    font-weight: 700;
 
 }
 
@@ -109,44 +106,49 @@ h1 {
 
     color: #000;
     margin: 0.2em 0;
-    font-size: 1.875em;
+    font-size: 1.500em;
     line-height: 1.4;
-    font-weight: 800;
+    font-weight: 700;
     text-align: left;
 }
 
 h2 {
     color: #222;
     margin: .5em 0;
-    font-size: 1.275em;
+    font-size: 1.250em;
     line-height: 1.2;
     text-align: left;
+    font-weight: 400;
 
 }
 
 h3 {
     color: #333;
     margin-bottom: 0.3em;
-    font-size: 1.75em;
+    font-size: 1.125em;
     line-height: 1.3;
+    font-weight: 400;
 }
 
 h4 {
     color: #444;
     margin-bottom: 0.5em;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.25;
+    font-weight: 400;
 }
 
 h5 {
     color: #555;
-    margin-bottom: 1.25em;
+    margin-bottom: 0.875em;
     font-size: 1em;
+    font-weight: 400;
 }
 
 h6 {
     color: #666;
-    font-size: 1em;
+    font-size: 0.750em;
+    font-weight: 400;
 }
 
 /* Header =============================================================================  */
@@ -160,6 +162,12 @@ header {
     box-shadow: 2px 2px 5px #888888;
 }
 
+.introduction img {
+    width: 100%;
+    height: 50%;
+    border-bottom: 1px solid #1b242e;
+}
+
 /* Images=============================================================================  */
 img.logo {
     float: left;
@@ -171,12 +179,65 @@ img.header {
     height: 70%;
 }
 
-img.thumbnails {
+.img {
+    margin: 5px;
+    padding:10px;
+    float: left;
     width: 300px;
-    margin: 0;
+}
+
+.img .desc {
+    color: #000000;
+    text-align: center;
+    padding: 15px;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+.img img:hover{
+
+    border:4px solid #1b242e;
+    box-shadow: 2px 2px 5px #ffffff;
 
 }
-img.thumbnailslast {float:right;}
+
+/*Form*/
+form {
+    width: 530px;
+    margin: 0;}
+
+input {
+    width: 130px;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    background-color: lightgrey;
+}
+
+label {
+    float: left;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
+}
 
 /* Navigation=============================================================================  */
 .top-navigation > .content {
@@ -241,7 +302,7 @@ img.thumbnailslast {float:right;}
 #content {
     width: 100%;
     clear: both;
-    padding: 75px 0;
+    padding: 0;
     color: #333;
     line-height: 1.5em;
 
@@ -249,13 +310,16 @@ img.thumbnailslast {float:right;}
 
 .portfolio {
     background-color: lightgrey;
-    padding-bottom:100px;
-    width:100%;
+    padding: 0;
+    width: 100%;
+    border-top: 1px solid #1b242e;
 }
-.contact{   background-color: ghostwhite;
-    border-top: 4px solid #1b242e;
-    border-bottom: 4px solid #1b242e;
-    padding-bottom:100px;}
+
+.contact {
+    background-color: ghostwhite;
+    border-top: 1px solid #1b242e;
+    padding-bottom: 100px;
+}
 
 /* Footer =============================================================================  */
 
@@ -292,7 +356,7 @@ img.thumbnailslast {float:right;}
 }
 
 .social .github {
-    color: #383838;
+    color: #800080;
 }
 
 .social .linkedin {
