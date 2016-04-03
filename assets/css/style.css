@@ -182,7 +182,7 @@ img.header {
 
 .img {
     margin: 5px;
-    padding:10px;
+    padding: 10px;
     float: left;
     width: 300px;
 }
@@ -199,20 +199,27 @@ img.header {
     box-shadow: 2px 2px 5px #888888;
 }
 
-.img img:hover{
+.img img:hover {
 
     outline: 4px solid #1b242e;
     box-shadow: 2px 2px 5px #ffffff;
 
 }
-.img a img, .img a{ border: none; float: left; }
-.img a{margin: 3px;}
 
+.img a img, .img a {
+    border: none;
+    float: left;
+}
+
+.img a {
+    margin: 3px;
+}
 
 /* form=============================================================================  */
 form {
     width: 530px;
-    margin: 0;}
+    margin: 0;
+}
 
 input {
     width: 130px;
@@ -229,6 +236,11 @@ input[type=text]:focus {
     background-color: lightgrey;
 }
 
+input[type=submit]{
+    padding: 20px;
+    float: left;
+}
+
 label {
     float: left;
 }
@@ -242,8 +254,17 @@ textarea {
     background-color: #f8f8f8;
     resize: none;
 }
-legend{text-align:left;}
-/* Navigation=============================================================================  */
+
+legend {
+    text-align: left;
+}
+
+.bluehost {
+    float: right;
+}
+
+/* Navigation/
+=============================================================================  */
 .top-navigation > .content {
     height: 3.375rem;
 }
@@ -306,7 +327,6 @@ legend{text-align:left;}
 #content {
     width: 100%;
     clear: both;
-    padding: 0;
     color: #333;
     line-height: 1.5em;
 
@@ -314,7 +334,7 @@ legend{text-align:left;}
 
 .portfolio {
     background-color: lightgrey;
-    padding: 0;
+    padding-bottom: 100px;
     width: 100%;
     border-top: 1px solid #1b242e;
 }
@@ -324,7 +344,11 @@ legend{text-align:left;}
     border-top: 1px solid #1b242e;
     padding-bottom: 100px;
 }
-.affiliates {width:250px;position:relative;left:635px;bottom:600px;}
+
+.affiliates {
+    float: left;
+}
+
 /* Footer =============================================================================  */
 
 .social {
